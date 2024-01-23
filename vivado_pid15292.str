@@ -1,0 +1,662 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 15292
+License: Customer
+
+Current time: 	Sat Apr 23 11:19:40 BST 2022
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 134 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	u1906780
+User home directory: C:/Users/u1906780
+User working directory: E:/projectRerun
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/u1906780/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/u1906780/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/u1906780/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	E:/projectRerun/vivado.log
+Vivado journal file location: 	E:/projectRerun/vivado.jou
+Engine tmp dir: 	E:/projectRerun/.Xil/Vivado-15292-F210-26
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 27006@XilinxLicense.soe.warwick.ac.uk
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 591 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: E:\projectRerun\projectRerun.xpr. Version: Vivado v2019.1 
+// Tcl Message: open_project E:/projectRerun/projectRerun.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 591 MB. GUI used memory: 43 MB. Current time: 4/23/22, 11:19:42 AM BST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 56 MB (+56153kb) [00:00:12]
+// [Engine Memory]: 607 MB (+484612kb) [00:00:12]
+// [GUI Memory]: 65 MB (+6479kb) [00:00:13]
+// [Engine Memory]: 641 MB (+4681kb) [00:00:14]
+// [GUI Memory]: 71 MB (+2548kb) [00:00:14]
+// [GUI Memory]: 80 MB (+5708kb) [00:00:14]
+// [GUI Memory]: 99 MB (+16244kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3117 ms.
+// Tcl Message: open_project E:/projectRerun/projectRerun.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'H:/Desktop/ES3B2/projectRerun' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: ERROR: [IP_Flow 19-993] Could not find IP file for IP 'clk_wiz_1'. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 740.402 ; gain = 138.273 
+// Tcl Message: ERROR: [Common 17-39] 'open_project' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_project' failed due to earlier errors.  
+// [Engine Memory]: 711 MB (+38945kb) [00:00:17]
+dismissDialog("Open Project"); // by (cl)
+// a (cl): Critical Messages: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 108 MB (+3863kb) [00:00:46]
+// Elapsed time: 80 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 1); // B (F, cl)
+// [GUI Memory]: 119 MB (+5616kb) [00:01:41]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// O (cl):  Re-customize IP : addNotify
+// [Engine Memory]: 858 MB (+116985kb) [00:01:44]
+// TclEventType: IP_LOCK_CHANGE
+// r (cl): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1556 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 65 MB. Current time: 4/23/22, 11:21:18 AM BST
+dismissDialog("Re-customize IP"); // O (cl)
+setText("PRIM IN FREQ", "106.470", true); // z (cU, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cT (E, r)
+setText("PRIM IN FREQ", (String) null); // z (cU, r)
+typeControlKey(null, null, 'z');
+setText("PRIM IN FREQ", "100.00"); // z (cU, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cT (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cT (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cT (E, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cT (E, r)
+// [GUI Memory]: 128 MB (+4183kb) [00:02:16]
+dismissDialog("Re-customize IP"); // r (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // B (F, cl)
+// [Engine Memory]: 910 MB (+9988kb) [00:02:18]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2); // B (F, cl)
+// A (cl): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 954 MB. GUI used memory: 67 MB. Current time: 4/23/22, 11:22:02 AM BST
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3, true); // B (F, cl) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 16 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst : clk_wiz_0 (clk_wiz_0.xci)]", 2); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 1, true); // B (F, cl) - Node
+// Elapsed time: 508 seconds
+selectCodeEditor("clk_wiz_0_clk_wiz.v", 237, 172); // D (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// Elapsed time: 662 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// [GUI Memory]: 135 MB (+115kb) [00:22:41]
+// by (SwingUtilities.SharedOwnerFrame):  Open IP Catalog : addNotify
+dismissDialog("Open IP Catalog"); // by (SwingUtilities.SharedOwnerFrame)
+// Elapsed time: 24 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "block mem"); // OverlayTextField (aF, cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6, "Block Memory Generator", 0, false); // L (O, cl)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6); // L (O, cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6, "Block Memory Generator", 0, false, false, false, false, false, true); // L (O, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cl):  Customize IP : addNotify
+// r (cl): Customize IP: addNotify
+// [Engine Memory]: 980 MB (+25597kb) [00:23:10]
+dismissDialog("Customize IP"); // l (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 980 MB. GUI used memory: 82 MB. Current time: 4/23/22, 11:42:42 AM BST
+// Elapsed time: 24 seconds
+setText("Component Name", "fire_blob"); // z (U, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+// Elapsed time: 17 seconds
+selectComboBox("Enable Port Type (Enable_A)", "Always Enabled", 0); // E (E, r)
+// Elapsed time: 123 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectCheckBox((HResource) null, "Load Init File", true); // g (o, r): TRUE
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+// Elapsed time: 32 seconds
+setFileChooser("E:/projectRerun/images/blob.png");
+// Elapsed time: 18 seconds
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_EDIT, "Edit"); // a (E, r)
+selectCheckBox((HResource) null, "Load Init File", false); // g (o, r): FALSE
+selectCheckBox((HResource) null, "Load Init File", true); // g (o, r): TRUE
+selectCheckBox((HResource) null, "Load Init File", false); // g (o, r): FALSE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,005 MB. GUI used memory: 84 MB. Current time: 4/23/22, 11:46:32 AM BST
+// Elapsed time: 89 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (E, r)
+selectComboBox("Memory Type (Memory_Type)", "Single Port ROM", 3); // E (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 762 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1260 ms. Increasing delay to 3780 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1260 ms. Increasing delay to 3000 ms.
+// Elapsed time: 243 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+setText("Defines the PortA Write Width(DINA)", "8"); // z (bh, r)
+setText("Write Depth", "32"); // z (bh, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+dismissDialog("Customize IP"); // r (cl)
+// [GUI Memory]: 142 MB (+485kb) [00:33:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,005 MB. GUI used memory: 80 MB. Current time: 4/23/22, 12:16:33 PM BST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1096 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1096 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1212 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1052 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1052 ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1970 ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2643 ms. Increasing delay to 7929 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3430 ms. Increasing delay to 4000 ms.
+// Elapsed time: 2427 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6, "Block Memory Generator", 0, false); // L (O, cl)
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6, "Block Memory Generator", 0, false); // L (O, cl)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 6, "Block Memory Generator", 0, false, false, false, false, false, true); // L (O, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// l (cl):  Customize IP : addNotify
+// r (cl): Customize IP: addNotify
+dismissDialog("Customize IP"); // l (cl)
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 839ms to process. Increasing delay to 4000 ms.
+selectComboBox("Memory Type (Memory_Type)", "Single Port ROM", 3); // E (E, r)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2994 ms. Increasing delay to 5000 ms.
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+setText("Defines the PortA Write Width(DINA)", "8"); // z (bh, r)
+// Elapsed time: 16 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectComboBox("Enable Port Type (Enable_A)", "Always Enabled", 0); // E (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectCheckBox((HResource) null, "Load Init File", true); // g (o, r): TRUE
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+setFileChooser("E:/projectRerun/image_to_RGB_2018_coe/image.coe");
+// Elapsed time: 109 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+setText("Write Depth", "32"); // z (bh, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+// Elapsed time: 21 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+// Elapsed time: 11 seconds
+setFileChooser("E:/projectRerun/image_to_RGB_2018_coe/color_red.coe");
+// WARNING: HEventQueue.dispatchEvent() is taking  1124 ms.
+// Elapsed time: 13 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+// Elapsed time: 28 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a (E, r)
+setFileChooser("E:/projectRerun/image_to_RGB_2018_coe/image.coe");
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+setText("Write Depth", "374271"); // z (bh, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1100ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1100 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2101 ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2101 ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 33 seconds
+setText("Write Depth", "374272"); // z (bh, r)
+// WARNING: HEventQueue.dispatchEvent() is taking  2373 ms.
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+// Elapsed time: 10 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (cl)
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir e:/projectRerun/projectRerun.srcs/sources_1/ip 
+// by (cl):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {374272} CONFIG.Read_Width_A {8} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/projectRerun/image_to_RGB_2018_coe/image.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_0] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'e:/projectRerun/image_to_RGB_2018_coe/image.coe' provided. It will be converted relative to IP Instance files '../../../../image_to_RGB_2018_coe/image.coe' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: generate_target {instantiation_template} [get_files e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'... 
+// TclEventType: FILE_SET_CHANGE
+// aI (cl): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4803 ms. Increasing delay to 6000 ms.
+// Elapsed time: 145 seconds
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "8", 7); // e (bd, aI)
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "4", 3); // e (bd, aI)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// by (cl):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'... 
+// Tcl Message: xit::close_ipfile: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1125.379 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target: Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 1125.379 ; gain = 0.000 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs -jobs 4 blk_mem_gen_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2773 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 1181ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1181 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2306 ms to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2307 ms to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2307 ms to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9376 ms. Increasing delay to 7000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 437ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 23 12:43:02 2022] Launched blk_mem_gen_0_synth_1... Run output will be captured here: E:/projectRerun/projectRerun.runs/blk_mem_gen_0_synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 1125.379 ; gain = 0.000 
+// WARNING: HEventQueue.dispatchEvent() is taking  1028 ms.
+// Tcl Message: export_simulation -of_objects [get_files e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory E:/projectRerun/projectRerun.ip_user_files/sim_scripts -ip_user_files_dir E:/projectRerun/projectRerun.ip_user_files -ipstatic_source_dir E:/projectRerun/projectRerun.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/projectRerun/projectRerun.cache/compile_simlib/modelsim} {questa=E:/projectRerun/projectRerun.cache/compile_simlib/questa} {riviera=E:/projectRerun/projectRerun.cache/compile_simlib/riviera} {activehdl=E:/projectRerun/projectRerun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6313 ms to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6313 ms to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6313 ms to process. Increasing delay to 6000 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3761 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1134 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 22116 ms. Increasing delay to 8000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7157 ms. Increasing delay to 9000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4507 ms. Increasing delay to 10000 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1090 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3190 ms to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3190 ms to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3190 ms to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 14107 ms. Increasing delay to 10000 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3838 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11870 ms. Increasing delay to 10000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6110 ms. Increasing delay to 10000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 8816 ms to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 8816 ms to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 8816 ms to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4215 ms to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6504 ms to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 6504 ms to process. Increasing delay to 9000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,005 MB. GUI used memory: 85 MB. Current time: 4/23/22, 12:46:33 PM BST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5076 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5076 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 37671 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5756 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 11898 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 7188 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 7189 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 16464 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 11216 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 11132 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 11132 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 7905 ms to process. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10684 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 49041 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11461 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5020 ms. Increasing delay to 10000 ms.
+// Elapsed time: 606 seconds
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cl):  Re-customize IP : addNotify
+// r (cl): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (cl)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Power Estimation", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Symbol", 0); // bg (E, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+// WARNING: updateGUI() is taking  1058 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2187 ms.
+dismissDialog("Re-customize IP"); // r (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 3); // B (F, cl)
+// A (cl): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cl)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8565 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9227 ms. Increasing delay to 27681 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3591 ms.
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 3, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, cl)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6464 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1153 ms. Decreasing delay to 3153 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 13842 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 16473 ms. Increasing delay to 49419 ms.
+// Elapsed time: 231 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 2, true); // B (F, cl) - Node
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6934 ms. Increasing delay to 10000 ms.
+// Elapsed time: 228 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst_1 : draw (draw.v)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), inst_1 : draw (draw.v)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 715 ms to process. Increasing delay to 2000 ms.
+selectCodeEditor("draw.v", 106, 400); // cl (w, cl)
+selectCodeEditor("draw.v", 64, 416); // cl (w, cl)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5073 ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 11 seconds
+selectCodeEditor("draw.v", 165, 382); // cl (w, cl)
+selectCodeEditor("draw.v", 241, 371); // cl (w, cl)
+selectCodeEditor("draw.v", 270, 369); // cl (w, cl)
+selectCodeEditor("draw.v", 364, 352); // cl (w, cl)
+selectCodeEditor("draw.v", 350, 367); // cl (w, cl)
+selectCodeEditor("draw.v", 365, 344); // cl (w, cl)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4856 ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 3049 ms to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7591 ms. Increasing delay to 10000 ms.
+// Elapsed time: 14 seconds
+selectCodeEditor("draw.v", 151, 290); // cl (w, cl)
+selectCodeEditor("draw.v", 148, 304); // cl (w, cl)
+selectCodeEditor("draw.v", 140, 284); // cl (w, cl)
+selectCodeEditor("draw.v", 140, 298); // cl (w, cl)
+selectCodeEditor("draw.v", 139, 283); // cl (w, cl)
+// Elapsed time: 32 seconds
+selectCodeEditor("draw.v", 28, 421); // cl (w, cl)
+selectCodeEditor("draw.v", 16, 418); // cl (w, cl)
+selectCodeEditor("draw.v", 5, 416); // cl (w, cl)
+selectCodeEditor("draw.v", 39, 401); // cl (w, cl)
+selectCodeEditor("draw.v", 419, 380); // cl (w, cl)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 2557 ms to process. Increasing delay to 6000 ms.
+// WARNING: updateGUI() is taking  2268 ms.
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 5, true); // B (F, cl) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  2294 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 5, true); // B (F, cl) - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1234 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 5, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectButton((HResource) null, "Properties_settings"); // u (f, cl): TRUE
+selectButton((HResource) null, "Properties_settings"); // u (f, cl): FALSE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (blk_mem_gen_0.xci) elapsed time: 2.2s
+// PAPropertyPanels.initPanels (blk_mem_gen_0.xci) elapsed time: 3.2s
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 5848ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5848 ms.
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "IP", 2); // i (c, cl)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i (c, cl)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "General", 0); // i (c, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 5, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 5, true); // B (F, cl) - Node
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5219 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5219 ms to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5219 ms to process. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9949 ms.
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 5, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 17002 ms. Increasing delay to 10000 ms.
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (blk_mem_gen_0.xci) elapsed time: 0.3s
+// PAPropertyPanels.initPanels (blk_mem_gen_0.xci) elapsed time: 1.2s
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 2310ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2310 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3048 ms.
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 5, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ae (an, cl)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5079 ms to process. Increasing delay to 7000 ms.
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (cl):  Re-customize IP : addNotify
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 2189ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2189 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 34969 ms. Increasing delay to 10000 ms.
+// r (cl): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4673 ms.
+// Elapsed time: 26 seconds
+dismissDialog("Re-customize IP"); // O (cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  4487 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 41077 ms. Increasing delay to 123231 ms.
+// Elapsed time: 15 seconds
+setText("Component Name", "blk_mem_gen_0"); // z (U, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 3); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bg (E, r)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 4265 ms to process. Increasing delay to 8000 ms.
+// Elapsed time: 11 seconds
+setText("Component Name", "blk_mem_gen_0"); // z (U, r)
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // B (f, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Power Estimation", 1); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Symbol", 0); // bg (E, r)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (r)
+// WARNING: updateGUI() is taking  2456 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2520 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, blk_mem_gen_0 (blk_mem_gen_0.xci)]", 5, true); // B (F, cl) - Node
+// WARNING: updateGUI() is taking  1063 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1080 ms.
+dismissDialog("Re-customize IP"); // r (cl)
+selectCodeEditor("draw.v", 258, 319); // cl (w, cl)
+selectCodeEditor("draw.v", 197, 179); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6829 ms. Increasing delay to 10000 ms.
+selectCodeEditor("draw.v", 40, 396); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  2983 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 552ms to process. Increasing delay to 2000 ms.
+selectCodeEditor("draw.v", 80, 414); // cl (w, cl)
+// [GUI Memory]: 150 MB (+422kb) [01:45:58]
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1033ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1033 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "draw.v", 'v'); // cl (w, cl)
+selectCodeEditor("draw.v", 76, 345); // cl (w, cl)
+selectCodeEditor("draw.v", 76, 345, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("draw.v", 76, 345); // cl (w, cl)
+selectCodeEditor("draw.v", 55, 448); // cl (w, cl)
+selectCodeEditor("draw.v", 55, 448, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("draw.v", 55, 448); // cl (w, cl)
+selectCodeEditor("draw.v", 106, 431); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("draw.v", 20, 260); // cl (w, cl)
+selectCodeEditor("draw.v", 202, 267); // cl (w, cl)
+selectCodeEditor("draw.v", 192, 263); // cl (w, cl)
+selectCodeEditor("draw.v", 176, 262); // cl (w, cl)
+selectCodeEditor("draw.v", 176, 262, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("draw.v", 182, 273); // cl (w, cl)
+selectCodeEditor("draw.v", 357, 384); // cl (w, cl)
+selectCodeEditor("draw.v", 357, 384, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("draw.v", 384, 383); // cl (w, cl)
+selectCodeEditor("draw.v", 384, 383, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("draw.v", 303, 358); // cl (w, cl)
+selectCodeEditor("draw.v", 2, 301); // cl (w, cl)
+selectCodeEditor("draw.v", 25, 314); // cl (w, cl)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1924 ms. Decreasing delay to 3924 ms.
+// Elapsed time: 12 seconds
+selectCodeEditor("draw.v", 443, 329); // cl (w, cl)
+// Elapsed time: 47 seconds
+selectCodeEditor("draw.v", 355, 252); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("draw.v", 3, 129); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B (f, cl)
+selectCodeEditor("draw.v", 170, 276); // cl (w, cl)
+closeMainWindow("projectRerun - [E:/projectRerun/projectRerun.xpr] - Vivado 2019.1"); // cl
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2232 ms. Increasing delay to 6696 ms.
+// al (cl): Save Project: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3359 ms.

@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 23 11:19:14 2022
+# Process ID: 15292
+# Current directory: E:/projectRerun
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2876 E:\projectRerun\projectRerun.xpr
+# Log file: E:/projectRerun/vivado.log
+# Journal file: E:/projectRerun\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/projectRerun/projectRerun.xpr
+INFO: [Project 1-313] Project file moved from 'H:/Desktop/ES3B2/projectRerun' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/projectRerun/projectRerun.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci', nor could it be found using path 'H:/Desktop/ES3B2/projectRerun/projectRerun.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci'.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'clk_wiz_1'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:nexys4_ddr:part0:1.1' used to customize the IP 'clk_wiz_0' do not match.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 740.402 ; gain = 138.273
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/projectRerun/images/blob.png' provided. It will be converted relative to IP Instance files '../../../../images/blob.png'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/projectRerun/image_to_RGB_2018_coe/image.coe' provided. It will be converted relative to IP Instance files '../../../../image_to_RGB_2018_coe/image.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/projectRerun/image_to_RGB_2018_coe/color_red.coe' provided. It will be converted relative to IP Instance files '../../../../image_to_RGB_2018_coe/color_red.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/projectRerun/image_to_RGB_2018_coe/image.coe' provided. It will be converted relative to IP Instance files '../../../../image_to_RGB_2018_coe/image.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir e:/projectRerun/projectRerun.srcs/sources_1/ip
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {374272} CONFIG.Read_Width_A {8} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/projectRerun/image_to_RGB_2018_coe/image.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/projectRerun/image_to_RGB_2018_coe/image.coe' provided. It will be converted relative to IP Instance files '../../../../image_to_RGB_2018_coe/image.coe'
+generate_target {instantiation_template} [get_files e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+xit::close_ipfile: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1125.379 ; gain = 0.000
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+generate_target: Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 1125.379 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs -jobs 4 blk_mem_gen_0_synth_1
+[Sat Apr 23 12:43:02 2022] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: E:/projectRerun/projectRerun.runs/blk_mem_gen_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 1125.379 ; gain = 0.000
+export_simulation -of_objects [get_files e:/projectRerun/projectRerun.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory E:/projectRerun/projectRerun.ip_user_files/sim_scripts -ip_user_files_dir E:/projectRerun/projectRerun.ip_user_files -ipstatic_source_dir E:/projectRerun/projectRerun.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/projectRerun/projectRerun.cache/compile_simlib/modelsim} {questa=E:/projectRerun/projectRerun.cache/compile_simlib/questa} {riviera=E:/projectRerun/projectRerun.cache/compile_simlib/riviera} {activehdl=E:/projectRerun/projectRerun.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit

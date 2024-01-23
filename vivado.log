@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 23 13:11:34 2022
+# Process ID: 284
+# Current directory: E:/projectRerun
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15736 E:\projectRerun\projectRerun.xpr
+# Log file: E:/projectRerun/vivado.log
+# Journal file: E:/projectRerun\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/projectRerun/projectRerun.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 23 13:11:57 2022...
